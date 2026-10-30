@@ -19,5 +19,8 @@ spec:
       - name: youtube-clone-app
         image: pinshu/youtube-clone:latest
         imagePullPolicy: "Always"
+        env:
+          - name: BROWSER
+            value: "none"
         ports:
         - containerPort: 3000
